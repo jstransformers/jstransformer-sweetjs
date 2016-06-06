@@ -1,6 +1,6 @@
 {
   "name": "jstransformer-sweetjs",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Sweet.js support for JSTransformers.",
   "keywords": [
     "jstransformer"
@@ -25,6 +25,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "sweet.js": "^0.7.7"
+    "extend-shallow": "^2.0.1",
+    "sweet.js": "^1.0.3"
   }
 }
