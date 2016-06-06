@@ -14,7 +14,10 @@
 ## API
 
 ```js
-// TODO Add JavaScript documentation
+var sweet = require('jstransformer')(require('jstransformer-sweetjs'))
+var input = "syntax hi = function (ctx) { return #`console.log('hello, world!')`; }\n hi"
+sweet.render(input).body
+//=> 'console.log('hello, world!');
 ```
 
 ## License

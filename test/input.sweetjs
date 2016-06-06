@@ -1,26 +1,4 @@
-// Define the class macro here...
-macro class {
-  rule {
-    $className {
-        constructor $cparams $cbody
-        $($mname $mparams $mbody) ...
-    }
-  } => {
-    function $className $cparams $cbody
-    $($className.prototype.$mname
-      = function $mname $mparams $mbody; ) ...
-  }
+syntax hi = function (ctx) {
+  return #`console.log('hello, world!')`;
 }
-
-// And now classes are in JavaScript!
-class Person {
-  constructor(name) {
-    this.name = name;
-  }
-
-  say(msg) {
-    console.log(this.name + " says: " + msg);
-  }
-}
-var bob = new Person("Bob");
-bob.say("Macros are sweet!");
+hi

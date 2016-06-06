@@ -1,6 +1,6 @@
 {
   "name": "jstransformer-sweetjs",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Sweet.js support for JSTransformers.",
   "keywords": [
     "jstransformer"
@@ -15,6 +15,9 @@
     "coverage": "test-jstransformer coverage",
     "test": "test-jstransformer"
   },
+  "engines": {
+    "node": ">=0.10.36"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jstransformers/jstransformer-sweetjs.git"
@@ -23,8 +26,9 @@
     "name": "JSTransformers Team",
     "url": "http://github.com/orgs/jstransformers/people"
   },
-  "license": "MIT",
   "dependencies": {
-    "sweet.js": "^0.7.7"
-  }
+    "extend-shallow": "^2.0.1",
+    "sweet.js": "^1.0.3"
+  },
+  "license": "MIT"
 }
