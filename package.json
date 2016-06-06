@@ -15,6 +15,9 @@
     "coverage": "test-jstransformer coverage",
     "test": "test-jstransformer"
   },
+  "engines": {
+    "node": ">=0.10.36"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jstransformers/jstransformer-sweetjs.git"
@@ -23,9 +26,9 @@
     "name": "JSTransformers Team",
     "url": "http://github.com/orgs/jstransformers/people"
   },
-  "license": "MIT",
   "dependencies": {
     "extend-shallow": "^2.0.1",
     "sweet.js": "^1.0.3"
-  }
+  },
+  "license": "MIT"
 }
