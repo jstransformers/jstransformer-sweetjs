@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "extend-shallow": "^2.0.1",
-    "sweet.js": "^2.0.0"
+    "sweet.js": "^3.0.1"
   },
   "license": "MIT"
 }
