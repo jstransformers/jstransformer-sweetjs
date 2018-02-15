@@ -1,14 +1,16 @@
 'use strict'
 
-var extend = require('extend-shallow')
-var sweet = require('sweet.js')
+const extend = require('extend-shallow')
+const sweet = require('@sweet-js/core')
+const NodeLoader = require('@sweet-js/core/dist/node-loader').default
 
 exports.name = 'sweetjs'
-exports.inputFormats = ['sweetjs', 'sweet']
+exports.inputFormats = ['sweetjs', 'sweet', 'sjs']
 exports.outputFormat = 'html'
 
-exports.render = function (str, options, locals) {
-  var opts = extend({}, options, locals)
-  var output = sweet.compile(str, opts)
-  return output.code
+exports.renderFile = function (file, options, locals) {
+  extend(options, locals)
+  const loader = new NodeLoader(process.cwd(), options)
+  const out = sweet.compile(file, loader, options)
+  return out.code
 }
