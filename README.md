@@ -1,5 +1,7 @@
 # jstransformer-sweetjs
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jstransformers/jstransformer-sweetjs.svg)](https://greenkeeper.io/)
+
 [Sweet.js](http://sweetjs.org/) support for [JSTransformers](http://github.com/jstransformers).
 
 [![Build Status](https://img.shields.io/travis/jstransformers/jstransformer-sweetjs/master.svg)](https://travis-ci.org/jstransformers/jstransformer-sweetjs)
