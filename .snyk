@@ -1,0 +1,17 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:minimatch:20160620':
+    - '@sweet-js/core > shift-js > grunt-contrib-jshint > jshint > minimatch':
+        patched: '2022-10-06T22:14:06.394Z'
+    - '@sweet-js/core > shift-js > grunt > minimatch':
+        patched: '2022-10-06T22:14:06.394Z'
+    - '@sweet-js/core > shift-js > grunt > glob > minimatch':
+        patched: '2022-10-06T22:14:06.394Z'
+    - '@sweet-js/core > shift-js > grunt > findup-sync > glob > minimatch':
+        patched: '2022-10-06T22:14:06.394Z'
+  'npm:uglify-js:20151024':
+    - '@sweet-js/core > shift-js > grunt-contrib-uglify > uglify-js':
+        patched: '2022-10-06T22:14:06.394Z'
